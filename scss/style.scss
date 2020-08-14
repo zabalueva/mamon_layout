@@ -1,0 +1,172 @@
+%container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 1180px;
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: 'Ubuntu', sans-serif;
+
+    &__header {
+    padding-top: 30px;
+    @extend %container;
+    }
+
+    &__content {
+    @extend %container;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+
+    &__section {
+    @extend %container;
+    border-top: 1px solid rgba(161, 161, 161, 0.5);  
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    box-sizing: border-box;
+
+    }
+}
+
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        font-weight: 700;
+}
+
+.button {
+    background-color: #5528FF;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+} 
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: start;
+    align-items: center;
+
+    &__item {
+        padding-left: 15px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #202020;
+    }
+    &__item-button {
+        border-radius: 5px;
+        padding: 5px 15px;
+    } 
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &__img {
+        display: block;
+        width: 58px;
+        height: 58px;
+        background-image: url(../img/logo.svg);
+        margin-right: 15px;
+    }
+
+    &__text {
+        font-size: 24px;
+        color: #222020;
+    }
+}
+
+.start {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    &__title {
+        font-size: 55px;
+        font-weight: 700;
+        color: black;
+    }
+
+    &__text {
+        font-size: 32px;
+        line-height: 1,5;
+        color: cornflowerblue;
+    }
+
+    &__button {
+        border-radius: 10px;
+        font-size: 24px;
+        padding: 15px 45px;
+    }
+
+    &__audio {
+        margin-top: 30px;
+        border-radius: 10px;
+        background-color:  #5528FF;
+    }
+
+    &__progress {
+        margin-top: 3px;
+        background-color: black;
+    }
+}
+
+.section {
+    &__title {
+        position: absolute;
+        font-size: 14px;
+        font-weight: 300;
+        background-color: #fff;
+        padding: 5px 15px;
+        top: -25px;
+        color: #B2B2B2;      
+    }
+}
+
+.services {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%; //можно заменить на 1fr 1fr / 1fr 1fr
+
+    &__item {        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__item:nth-child(even) {
+        grid-column: 2;
+        padding-bottom: 100px;
+    }
+}
+
+
+.service {
+    &__icon {
+        grid-column: 1;
+    }
+    &__title {
+        grid-column: 2;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 28px;
+        font-weight: 400;
+        color: black
+    }
+    &__desc {
+        grid-column: 2;
+        color: #B2B2B2;
+        font-size: 14px;
+        line-height: 1,5;
+    }
+}
+
