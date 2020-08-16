@@ -131,6 +131,7 @@
 .services {
   display: grid;
   grid-template: 50% 50% / 50% 50%;
+  justify-self: center;
 }
 
 .services__item {
@@ -142,10 +143,12 @@
 
 .services__item:nth-child(even) {
   grid-column: 2;
+  justify-self: center;
 }
 
 .service__icon {
   grid-column: 1;
+  justify-self: center;
 }
 
 .service__title {
@@ -162,5 +165,9 @@
   color: #B2B2B2;
   font-size: 14px;
   line-height: 16px;
-  max-width: 292px;
+  max-width: 342px;
+}
+
+.photo {
+  display: grid;
 }

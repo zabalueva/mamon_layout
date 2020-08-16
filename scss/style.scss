@@ -28,16 +28,15 @@
     padding-bottom: 40px;
     position: relative;
     box-sizing: border-box;
-
     }
 }
 
 .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 700;
 }
 
 .button {
@@ -135,8 +134,9 @@
 }
 
 .services {
-    display: grid;
+    display: grid;//можно было заменить flex-basis calc 100%- 120 px (100 плюс отступ) 
     grid-template: 50% 50% / 50% 50%; //можно заменить на 1fr 1fr / 1fr 1fr
+    justify-self: center;
 
     &__item {        
         display: flex;
@@ -146,6 +146,7 @@
     }
     &__item:nth-child(even) {
         grid-column: 2;
+        justify-self: center;
     }
 }
 
@@ -153,6 +154,7 @@
 .service {
     &__icon {
         grid-column: 1;
+        justify-self: center;
     }
     &__title {
         grid-column: 2;
@@ -167,7 +169,11 @@
         color: #B2B2B2;
         font-size: 14px;
         line-height: 16px;
-        max-width: 292px;
+        max-width: 342px;
     }
 }
 
+.photo {
+    display: grid;
+    grid-template: ;
+}
