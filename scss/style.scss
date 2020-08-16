@@ -27,7 +27,32 @@
     padding-top: 60px;
     padding-bottom: 40px;
     position: relative;
-    box-sizing: border-box;
+    }
+
+    &__footer {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    }
+}
+
+.footer {   
+    @extend %container;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__social {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #b2b2b2;
+        font-size: 24px;
+        margin-left: 15px;
     }
 }
 
@@ -55,7 +80,7 @@
     &__item {
         padding-left: 15px;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 24px;
         line-height: 16px;
         color: #202020;
     }
@@ -131,6 +156,9 @@
         top: -25px;
         color: #B2B2B2;      
     }
+    &__content {
+        margin: 0 auto;
+    }
 }
 
 .services {
@@ -154,7 +182,6 @@
 .service {
     &__icon {
         grid-column: 1;
-        justify-self: center;
     }
     &__title {
         grid-column: 2;
@@ -175,5 +202,28 @@
 
 .photo {
     display: grid;
-    grid-template: ;
+    grid-template: repeat(2, 1fr)  /repeat(5, 20%);
+    grid-row-gap: 40px;
+
+/*    &__item {
+        align-self: center;
+        justify-self: center;
+    } */
+}
+
+.team {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-row-gap: 40px;
+
+    &__item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__text {
+        flex-basis: calc(100% - 100px);
+        margin-left: 30px;
+    }
 }
