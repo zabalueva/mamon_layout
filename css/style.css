@@ -195,6 +195,24 @@
   max-width: 342px;
 }
 
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.slider__button {
+  align-self: center;
+  background-color: hotpink;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.slider__button:hover {
+  background-color: pink;
+}
+
 .photo {
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(5, 20%);

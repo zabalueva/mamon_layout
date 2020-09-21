@@ -200,6 +200,25 @@
     }
 }
 
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+
+    &__button {     
+        align-self: center;
+        background-color: hotpink;
+        border-radius: 12px;
+        font-weight: 500;
+    &:hover {
+        background-color: pink;
+    }
+}
+}
+
+
 .photo {
     display: grid;
     grid-template: repeat(2, 1fr)  /repeat(5, 20%);

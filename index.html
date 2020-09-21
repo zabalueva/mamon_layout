@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" 
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
+    <script src="js/slider.js"></script>
     <header class="page__header header">
         <div class="header__logo">
             <a href="#" class="logo">
@@ -40,11 +41,13 @@
         <button type="button" class="button start__button">Contact</button>      
     </article>
 
+    
+
     <section class="page__section section">
         <h2 class="section__title">OUR SERVICES</h2>
         <div class="section__content services">
             <div class="services__item service">
-                <span><img src="C:\Users\K\Desktop\ZabavA\FSD\layouts\video2\img\23x.png" alt="иконка" class="service__icon" draggable="true"></span>
+                <span><img src="..\img\23x.png" alt="иконка" class="service__icon" draggable="true"></span>
                 <div class="service__text">
                     <h3 class="service__title">Mobile Development </h3>
                     <p class="service__desc">We develop mobile apps for all contemporary mobile platforms. Mamon team
@@ -82,6 +85,14 @@
         </div>
     </section>
 
+    <section class="page__section section">
+        <h2 class="section__title">SLIDER</h2>
+        <div class="section__content slider">
+                <button class="slider__button" onclick="prev()">Prev</button>
+                <img id="slider" src="../img/2925.jpg" alt="" height = 400px width = 600px > 
+                <button class="slider__button" onclick="next()">Next</button>     
+        </div>
+    </section>
 
     <section class="page__section section">
         <h2 class="section__title">ICONS</h2>
