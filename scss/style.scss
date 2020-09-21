@@ -3,7 +3,7 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
-    max-width: 1180px;
+    max-width: 1000px;
     box-sizing: border-box;
 }
 
@@ -161,6 +161,9 @@
     }
     &__content {
         margin: 0 auto;
+    }
+    &__text {
+        padding-bottom: 30px;
     }
 }
 
