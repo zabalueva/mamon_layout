@@ -69,6 +69,9 @@
     font-weight: 700;
     color: #fff;
     border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 15px 45px;
 } 
 
 .menu {
@@ -209,9 +212,6 @@
 
     &__button {     
         align-self: center;
-        background-color: hotpink;
-        border-radius: 12px;
-        font-weight: 500;
     &:hover {
         background-color: pink;
     }
