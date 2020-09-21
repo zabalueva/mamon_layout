@@ -1,9 +1,9 @@
 "use strict";
 let images = [
-    "../img/2925.jpg",
-    "../img/2939.jpg",
-    "../img/5807.jpg",
-    "../img/0064.jpg"
+    "./img/2925.JPG",
+    "./img/2939.JPG",
+    "./img/5807.JPG",
+    "./img/0064.JPG",
 ];
 
 let num = 0;
