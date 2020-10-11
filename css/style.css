@@ -100,7 +100,7 @@
   display: block;
   width: 58px;
   height: 58px;
-  background-image: url(../img/logo.svg);
+  background-image: url('./img/logo.svg');
   margin-right: 15px;
 }
 
