@@ -1,3 +1,21 @@
+@media (max-width: 1200px) {
+  .page {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    max-width: none;
+  }
+}
+
 .page__header, .page__content, .page__section, .footer {
   margin: 0 auto;
   padding-left: 15px;
@@ -100,7 +118,7 @@
   display: block;
   width: 58px;
   height: 58px;
-  background-image: url('./img/logo.svg');
+  background-image: url("./img/logo.svg");
   margin-right: 15px;
 }
 
